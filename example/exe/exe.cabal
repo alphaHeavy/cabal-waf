@@ -1,0 +1,10 @@
+Name:                exe
+Version:             0.1
+License:             BSD3
+Build-type:          Simple
+Cabal-version:       >=1.10
+
+Executable exe
+  Main-is:           exe.hs
+  Build-depends:     base, lib3
+

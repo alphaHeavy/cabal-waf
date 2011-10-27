@@ -1,0 +1,13 @@
+#! /usr/bin/env python
+
+top = '../..'
+out = '%s/build' % top
+
+def configure(ctx):
+    ctx.load('cabal')
+
+def build(ctx):
+    ctx(source = 'lib3.cabal',
+        register = True,
+        depends_on = [ 'lib1', 'lib2' ] )
+

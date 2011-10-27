@@ -1,0 +1,11 @@
+Name:                lib2
+Version:             0.1
+License:             BSD3
+Build-type:          Simple
+Cabal-version:       >=1.10
+
+Library
+  Default-Language:  Haskell2010
+  Build-depends:     base, lib1
+  Exposed-modules:   Lib2
+
