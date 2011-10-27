@@ -28,8 +28,6 @@ Then run 'waf' or 'waf build' from the root to build the full tree. You can also
     [ 3/22] cabal_copy: build/example/lib1/package.conf.inplace
     [ 4/22] cabal_register: build/example/lib1/package.conf.inplace
     [ 5/22] ghcpkg_register: build/example/lib1/package.conf.inplace
-    lib1-0.1: Warning: haddock-interfaces: /Source/cabal-waf/build/dist/doc/html/lib1.haddock doesn't exist or isn't a file
-    lib1-0.1: Warning: haddock-html: /Source/cabal-waf/build/dist/doc/html doesn't exist or isn't a directory
     [ 6/22] cabal_touch: build/example/lib1/package.conf.inplace -> build/lib1.package
     [ 7/22] cabal_configure: example/lib2/lib2.cabal -> build/example/lib2/setup-config
     [ 8/22] cabal_build: build/example/lib2/setup-config -> build/example/lib2/package.conf.inplace
@@ -41,8 +39,6 @@ Then run 'waf' or 'waf build' from the root to build the full tree. You can also
     [ 9/22] cabal_copy: build/example/lib2/package.conf.inplace
     [10/22] cabal_register: build/example/lib2/package.conf.inplace
     [11/22] ghcpkg_register: build/example/lib2/package.conf.inplace
-    lib2-0.1: Warning: haddock-interfaces: /Source/cabal-waf/build/dist/doc/html/lib2.haddock doesn't exist or isn't a file
-    lib2-0.1: Warning: haddock-html: /Source/cabal-waf/build/dist/doc/html doesn't exist or isn't a directory
     [12/22] cabal_touch: build/example/lib2/package.conf.inplace -> build/lib2.package
     [13/22] cabal_configure: example/lib3/lib3.cabal -> build/example/lib3/setup-config
     [14/22] cabal_build: build/example/lib3/setup-config -> build/example/lib3/package.conf.inplace
@@ -54,8 +50,6 @@ Then run 'waf' or 'waf build' from the root to build the full tree. You can also
     [15/22] cabal_copy: build/example/lib3/package.conf.inplace
     [16/22] cabal_register: build/example/lib3/package.conf.inplace
     [17/22] ghcpkg_register: build/example/lib3/package.conf.inplace
-    lib3-0.1: Warning: haddock-interfaces: /Source/cabal-waf/build/dist/doc/html/lib3.haddock doesn't exist or isn't a file
-    lib3-0.1: Warning: haddock-html: /Source/cabal-waf/build/dist/doc/html doesn't exist or isn't a directory
     [18/22] cabal_touch: build/example/lib3/package.conf.inplace -> build/lib3.package
     [19/22] cabal_configure: example/exe/exe.cabal -> build/example/exe/setup-config
     [20/22] cabal_build: build/example/exe/setup-config -> build/example/exe/package.conf.inplace
@@ -85,8 +79,6 @@ Note: touch does not trigger rebuilds as waf checks the file contents, not times
     [ 9/22] cabal_copy: build/example/lib2/package.conf.inplace
     [10/22] cabal_register: build/example/lib2/package.conf.inplace
     [11/22] ghcpkg_register: build/example/lib2/package.conf.inplace
-    lib2-0.1: Warning: haddock-interfaces: /Source/cabal-waf/build/dist/doc/html/lib2.haddock doesn't exist or isn't a file
-    lib2-0.1: Warning: haddock-html: /Source/cabal-waf/build/dist/doc/html doesn't exist or isn't a directory
     [12/22] cabal_touch: build/example/lib2/package.conf.inplace -> build/lib2.package
     [13/22] cabal_configure: example/lib3/lib3.cabal -> build/example/lib3/setup-config
     [14/22] cabal_build: build/example/lib3/setup-config -> build/example/lib3/package.conf.inplace
@@ -96,8 +88,6 @@ Note: touch does not trigger rebuilds as waf checks the file contents, not times
     [15/22] cabal_copy: build/example/lib3/package.conf.inplace
     [16/22] cabal_register: build/example/lib3/package.conf.inplace
     [17/22] ghcpkg_register: build/example/lib3/package.conf.inplace
-    lib3-0.1: Warning: haddock-interfaces: /Source/cabal-waf/build/dist/doc/html/lib3.haddock doesn't exist or isn't a file
-    lib3-0.1: Warning: haddock-html: /Source/cabal-waf/build/dist/doc/html doesn't exist or isn't a directory
     [18/22] cabal_touch: build/example/lib3/package.conf.inplace -> build/lib3.package
     [19/22] cabal_configure: example/exe/exe.cabal -> build/example/exe/setup-config
     [20/22] cabal_build: build/example/exe/setup-config -> build/example/exe/package.conf.inplace
